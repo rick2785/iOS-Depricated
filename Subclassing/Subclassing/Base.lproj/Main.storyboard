@@ -1,0 +1,65 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="Subclassing" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="2-1" translatesAutoresizingMaskIntoConstraints="NO" id="pTU-4V-f20" customClass="SpecialImageView" customModule="Subclassing" customModuleProvider="target">
+                                <rect key="frame" x="255" y="190" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="AFa-Fd-yFf"/>
+                                    <constraint firstAttribute="width" constant="100" id="VpS-G3-CxB"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="3-1" translatesAutoresizingMaskIntoConstraints="NO" id="VlA-r4-Czt" customClass="SpecialImageView" customModule="Subclassing" customModuleProvider="target">
+                                <rect key="frame" x="255" y="330" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="height" constant="100" id="lAa-hn-yuk"/>
+                                    <constraint firstAttribute="width" constant="100" id="wzo-J3-bvj"/>
+                                </constraints>
+                            </imageView>
+                            <imageView contentMode="scaleAspectFill" horizontalHuggingPriority="251" verticalHuggingPriority="251" misplaced="YES" image="1-1" translatesAutoresizingMaskIntoConstraints="NO" id="dul-3f-b3b" customClass="SpecialImageView" customModule="Subclassing" customModuleProvider="target">
+                                <rect key="frame" x="255" y="49" width="100" height="100"/>
+                                <constraints>
+                                    <constraint firstAttribute="width" constant="100" id="AgT-DR-Fbs"/>
+                                    <constraint firstAttribute="height" constant="100" id="Ok0-Dt-R73"/>
+                                </constraints>
+                            </imageView>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="pTU-4V-f20" firstAttribute="top" secondItem="dul-3f-b3b" secondAttribute="bottom" constant="41" id="EeH-L3-gjT"/>
+                            <constraint firstItem="VlA-r4-Czt" firstAttribute="top" secondItem="pTU-4V-f20" secondAttribute="bottom" constant="40" id="H2j-cA-QLz"/>
+                            <constraint firstItem="dul-3f-b3b" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="29" id="V3Q-s7-IyU"/>
+                            <constraint firstItem="pTU-4V-f20" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="Xc0-uF-zWx"/>
+                            <constraint firstItem="VlA-r4-Czt" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="fiF-cM-gb0"/>
+                            <constraint firstItem="dul-3f-b3b" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="k6E-V8-AqV"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="specialImageView1" destination="dul-3f-b3b" id="FSB-qE-Arp"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="1-1" width="3888" height="2592"/>
+        <image name="2-1" width="4000" height="2667"/>
+        <image name="3-1" width="4000" height="2667"/>
+    </resources>
+</document>

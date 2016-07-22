@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="10117" systemVersion="15F34" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" initialViewController="BYZ-38-t0r">
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="10085"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="SoundMemory" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="600" height="600"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" tag="4" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="uln-uo-FlL">
+                                <rect key="frame" x="133" y="303" width="165" height="166"/>
+                                <state key="normal" image="green"/>
+                                <connections>
+                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="smx-oC-bJK"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="3" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jf9-6o-e0a">
+                                <rect key="frame" x="306" y="303" width="166" height="166"/>
+                                <state key="normal" image="blue"/>
+                                <connections>
+                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="YOW-p9-AMR"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" tag="2" contentMode="scaleToFill" misplaced="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="SmL-Yh-0Sb">
+                                <rect key="frame" x="306" y="130" width="166" height="165"/>
+                                <state key="normal" image="yellow"/>
+                                <connections>
+                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="9Au-5a-3Vo"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="L5i-rG-fbX" userLabel="Start Game Button">
+                                <rect key="frame" x="256" y="256" width="88" height="88"/>
+                                <state key="normal" image="play"/>
+                                <connections>
+                                    <action selector="startGame:" destination="BYZ-38-t0r" eventType="touchUpInside" id="uZq-mo-Kf3"/>
+                                </connections>
+                            </button>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Level 1" textAlignment="center" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="h39-DN-FIz">
+                                <rect key="frame" x="263" y="41" width="74" height="28"/>
+                                <fontDescription key="fontDescription" name="MarkerFelt-Thin" family="Marker Felt" pointSize="25"/>
+                                <color key="textColor" cocoaTouchSystemColor="darkTextColor"/>
+                                <nil key="highlightedColor"/>
+                            </label>
+                            <button opaque="NO" tag="1" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Vpr-xW-fht">
+                                <rect key="frame" x="133" y="130" width="165" height="165"/>
+                                <state key="normal" image="red"/>
+                                <connections>
+                                    <action selector="soundButtonPressed:" destination="BYZ-38-t0r" eventType="touchUpInside" id="SQw-as-ka8"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="calibratedWhite"/>
+                        <constraints>
+                            <constraint firstItem="SmL-Yh-0Sb" firstAttribute="leading" secondItem="L5i-rG-fbX" secondAttribute="trailing" constant="-39" id="2BA-NA-KYG"/>
+                            <constraint firstItem="L5i-rG-fbX" firstAttribute="leading" secondItem="uln-uo-FlL" secondAttribute="trailing" constant="-42" id="3Iz-bW-3HT"/>
+                            <constraint firstItem="uln-uo-FlL" firstAttribute="top" secondItem="L5i-rG-fbX" secondAttribute="bottom" constant="-41" id="790-7b-UcR"/>
+                            <constraint firstItem="h39-DN-FIz" firstAttribute="top" secondItem="y3c-jy-aDJ" secondAttribute="bottom" constant="21" id="A1H-ju-ONf"/>
+                            <constraint firstItem="jf9-6o-e0a" firstAttribute="leading" secondItem="L5i-rG-fbX" secondAttribute="trailing" constant="-38" id="EKy-iW-sXG"/>
+                            <constraint firstItem="jf9-6o-e0a" firstAttribute="leading" secondItem="L5i-rG-fbX" secondAttribute="trailing" constant="-38" id="M8b-ib-KN4"/>
+                            <constraint firstItem="h39-DN-FIz" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="OZS-IC-vV0"/>
+                            <constraint firstItem="L5i-rG-fbX" firstAttribute="centerX" secondItem="8bC-Xf-vdC" secondAttribute="centerX" id="aWN-T3-KgL"/>
+                            <constraint firstItem="jf9-6o-e0a" firstAttribute="top" secondItem="L5i-rG-fbX" secondAttribute="bottom" constant="-41" id="c2p-Ni-zCZ"/>
+                            <constraint firstItem="L5i-rG-fbX" firstAttribute="top" secondItem="Vpr-xW-fht" secondAttribute="bottom" constant="-39" id="fMm-Pt-D6y"/>
+                            <constraint firstItem="L5i-rG-fbX" firstAttribute="leading" secondItem="Vpr-xW-fht" secondAttribute="trailing" constant="-42" id="p7E-ff-uUY"/>
+                            <constraint firstItem="L5i-rG-fbX" firstAttribute="top" secondItem="SmL-Yh-0Sb" secondAttribute="bottom" constant="-39" id="t1h-EY-Qfw"/>
+                            <constraint firstItem="L5i-rG-fbX" firstAttribute="centerY" secondItem="8bC-Xf-vdC" secondAttribute="centerY" id="xj4-Ny-gWm"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="levelLabel" destination="h39-DN-FIz" id="rrV-Q6-dnr"/>
+                        <outlet property="startGameButton" destination="L5i-rG-fbX" id="Vvg-TH-fG9"/>
+                        <outletCollection property="soundButton" destination="Vpr-xW-fht" collectionClass="NSMutableArray" id="mRq-uG-Imh"/>
+                        <outletCollection property="soundButton" destination="SmL-Yh-0Sb" collectionClass="NSMutableArray" id="72s-5j-aMq"/>
+                        <outletCollection property="soundButton" destination="jf9-6o-e0a" collectionClass="NSMutableArray" id="yFJ-b6-6NS"/>
+                        <outletCollection property="soundButton" destination="uln-uo-FlL" collectionClass="NSMutableArray" id="fOJ-83-Txt"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="245" y="311"/>
+        </scene>
+    </scenes>
+    <resources>
+        <image name="blue" width="166" height="166"/>
+        <image name="green" width="165" height="166"/>
+        <image name="play" width="88" height="88"/>
+        <image name="red" width="165" height="165"/>
+        <image name="yellow" width="166" height="165"/>
+    </resources>
+</document>
